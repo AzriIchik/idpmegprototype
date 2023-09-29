@@ -1,0 +1,74 @@
+:root{
+  --btn-font: clamp(0.7rem,0.9vw,1rem);
+  --primary-clr: #48487f;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.font-small{font-size: clamp(0.75rem,0.8vw,0.8rem);}
+p { font-size: clamp(0.8rem ,1vw    ,1.2rem)  !important;}
+h1{ font-size: clamp(2.3rem ,2.6vw ,2.7rem)  !important;}
+h2{ font-size: clamp(1.8rem ,2vw   ,2.2rem)  !important;}
+h3{ font-size: clamp(1.55rem,1.7vw,1.95rem) !important;}
+h4{ font-size: clamp(1.3rem ,1.5vw ,1.7rem)  !important;}
+h5{ font-size: clamp(1.05rem,1.25vw,1.45rem) !important;}
+h6{ font-size: clamp(0.8rem ,1vw    ,1.2rem)  !important;}
+
+.btn{
+  border-radius: 0 !important;
+}
+
+body{
+  color: var(--primary-clr) !important;
+}
+
+
+/*HOME STYLE*/
+.home-main-bg{
+  background: #333 url(../src/view/assets/wallpaper/wallpaper1.jpg) no-repeat;
+  background-size: cover;
+  object-fit:fill;
+  height: 100%;
+}
+
+.home-filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.65;
+  position: absolute;
+  top: 0px;
+}
+
+.line-style{
+  width:50% !important;
+}
+
+.officeinfo-map-container{
+  width:100%; /* some hack */
+  padding-top:50%;
+  position:relative;
+}
+
+
+/* Style Overwrite*/
+.btn-primary{
+  background-color: var(--primary-clr) !important;
+}
+
+.btn-primary:hover{
+  background-color: #3a3a6c !important;
+}
+
+.btn-primary:focus{
+  box-shadow: 0 0 0 0.25rem rgb(72,72,127,0.5) !important;
+}
